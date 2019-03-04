@@ -18,6 +18,10 @@ html {
     background: #ffdc00
 }
 
+.cursor {
+	border-left: 4px solid black;
+}
+
 body,html {
     margin: 0;
     padding: 0;

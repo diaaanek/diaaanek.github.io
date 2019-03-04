@@ -1,4 +1,86 @@
-$(function () {
+
+
+// The typewriter element
+var typeWriterElement = document.getElementById('typewriter');
+
+// The TextArray:
+var textArray = ["building beautiful interfaces","inspiring women in tech. ", "feeding my artistic spirit."];
+
+// You can also do this by transfering it through a data-attribute
+// var textArray = typeWriterElement.getAttribute('data-array');
+
+
+// function to generate the backspace effect
+function delWriter(text, i, cb) {
+	if (i >= 0 ) {
+		typeWriterElement.innerHTML = text.substring(0, i--);
+		// generate a random Number to emulate backspace hitting.
+ 		var rndBack = 10 + Math.random() * 100;
+		setTimeout(function() {
+			delWriter(text, i, cb);
+		},rndBack);
+	} else if (typeof cb == 'function') {
+		setTimeout(cb,1000);
+	}
+};
+
+// function to generate the keyhitting effect
+function typeWriter(text, i, cb) {
+	if ( i < text.length ) {
+		typeWriterElement.innerHTML = text.substring(0, i++);
+		// generate a random Number to emulate Typing on the Keyboard.
+		var rndTyping = 250 - Math.random() * 100;
+		setTimeout( function () {
+			typeWriter(text, i++, cb)
+		},rndTyping);
+	} else if (i === text.length) {
+		setTimeout( function () {
+			delWriter(text, i, cb)
+		},1000);
+	}
+};
+
+// the main writer function
+function StartWriter(i) {
+	if (typeof textArray[i] == "undefined") {
+		setTimeout( function () {
+			StartWriter(0)
+		},1000);
+	} else if(i < textArray[i].length) {
+		typeWriter(textArray[i], 0, function () {
+			StartWriter(i+1);
+		});
+	}
+};
+// wait one second then start the typewriter
+setTimeout( function () {
+	StartWriter(0);
+},1000);
+
+// var app = document.getElementById('app');
+//
+// var typewriter = new Typewriter(app, {
+//     loop: true
+// });
+//
+// typewriter.typeString('building beautiful interfaces & experiences')
+//     .pauseFor(2500)
+//     .deleteAll()
+//     .typeString('feeding my creativity')
+//     .pauseFor(2500)
+//     .deleteAll()
+//     .typeString('<strong>growing!</strong>')
+//     .pauseFor(2500)
+//     .start();
+
+
+const toggle = document.querySelector('.toggle');
+
+toggle.addEventListener('click', function(){
+  document.body.classList.toggle('on');
+})
+
+$(function() {
   const d = new Date();
   const hours = d.getHours();
   const night = hours >= 19 || hours <= 7; // between 7pm and 7am
@@ -11,7 +93,7 @@ $(function () {
     body.classList.add('night');
   }
 
-  toggle.addEventListener('click', function () {
+  toggle.addEventListener('click', function() {
     const isChecked = input.checked;
     if (isChecked) {
       body.classList.remove('night');
@@ -26,7 +108,7 @@ $(function () {
 
   window.addEventListener(
     'scroll',
-    function () {
+    function() {
       if (window.scrollY > introHeight) {
         $topButton.fadeIn();
       } else {
@@ -36,7 +118,7 @@ $(function () {
     false
   );
 
-  topButton.addEventListener('click', function () {
+  topButton.addEventListener('click', function() {
     $('html, body').animate({ scrollTop: 0 }, 500);
   });
 
@@ -44,20 +126,20 @@ $(function () {
 
   function waveOnLoad() {
     hand.classList.add('wave');
-    setTimeout(function () {
+    setTimeout(function() {
       hand.classList.remove('wave');
     }, 2000);
   }
 
-  setTimeout(function () {
+  setTimeout(function() {
     waveOnLoad();
   }, 1000);
 
-  hand.addEventListener('mouseover', function () {
+  hand.addEventListener('mouseover', function() {
     hand.classList.add('wave');
   });
 
-  hand.addEventListener('mouseout', function () {
+  hand.addEventListener('mouseout', function() {
     hand.classList.remove('wave');
   });
 
@@ -74,4 +156,4 @@ $(function () {
   sr.reveal('.experience', { viewFactor: 0.2 });
   sr.reveal('.featured-projects', { viewFactor: 0.1 });
   sr.reveal('.other-projects', { viewFactor: 0.05 });
-});
+ });
