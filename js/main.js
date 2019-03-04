@@ -1,79 +1,77 @@
-"use strict";
-var isFirefox = "undefined" != typeof InstallTrigger,
- mobileVar = isMobile.any;
-$(".bg-cover").imagesLoaded({
- background: !0
-}, function(e) {
- TweenMax.fromTo($(".bg-cover"), .25, {
-  autoAlpha: 0
- }, {
-  autoAlpha: 1
- })
-}), $(window).load(function() {
- function e() {
-  o.countdown("resume")
- }
- var n = "#EC008C";
- $("#minimos-4").length && (n = "#F8EB31"), $("#drifter").length ? initDrifter("drifter", n) : $("#particles-js").length && initStompParticles();
- var o = $(".st-countdown");
- o.countdown("2017/09/01", function(e) {
-  $(this).html(e.strftime("%D Days %H:%M:%S"))
- }), $(".btn-count").hover(function() {
-  o.countdown("pause"), $(".st-countdown").html("Bid on Flippa")
- }, function() {
-  o.countdown("resume")
- });
- var a, t, s = $(".main-content p"),
-  r = $(".main-content h3"),
-  i = $(".main-content ul"),
-  c = "20px",
-  l = new TimelineMax({
-   paused: !0,
-   delay: .05,
-   onComplete: function() {
-    i.length && TweenMax.to(i, .75, {
-     autoAlpha: 1,
-     ease: Linear.easeNone
-    })
-   },
-   onCompleteParams: []
+$(function () {
+  const d = new Date();
+  const hours = d.getHours();
+  const night = hours >= 19 || hours <= 7; // between 7pm and 7am
+  const body = document.querySelector('body');
+  const toggle = document.getElementById('toggle');
+  const input = document.getElementById('switch');
+
+  if (night) {
+    input.checked = true;
+    body.classList.add('night');
+  }
+
+  toggle.addEventListener('click', function () {
+    const isChecked = input.checked;
+    if (isChecked) {
+      body.classList.remove('night');
+    } else {
+      body.classList.add('night');
+    }
   });
- isFirefox ? c = "0px" : mobileVar && (c = "2px"), o.countdown("pause"), r.length && (t = new SplitText(r, {
-  type: "words,chars",
-  wordsClass: "gpu-hack sven-word-++",
-  charsClass: "sven-char-++"
- }), l.staggerFromTo(t.chars, .4, {
-  y: "-50%",
-  opacity: 0
- }, {
-  y: "0%",
-  opacity: 1,
-  ease: Bounce.easeOut
- }, .08), l.addLabel("end"), l.call(e, [])), s.length && (a = new SplitText(s, {
-  type: "words,chars",
-  wordsClass: "gpu-hack s-word sven-word-++",
-  charsClass: "s-char sven-char-++"
- }), TweenMax.set(a.chars, {
-  force3D: !0,
-  rotationZ: "0.01deg"
- }), $.each(a.chars, function(e, n) {
-  var o = $(n).css("color"),
-   a = "end+=" + .04 * e;
-  l.fromTo($(n), .8, {
-   opacity: 0,
-   textShadow: "0 0 " + c + " " + o,
-   scale: 1.2,
-   color: "transparent"
-  }, {
-   opacity: 1,
-   scale: 1,
-   color: o,
-   textShadow: "none",
-   ease: Linear.easeNone
-  }, a)
- })), TweenMax.set($(".main-content"), {
-  visibility: "visible"
- }), TweenMax.set($(".preloader"), {
-  display: "none"
- }), l.play()
+
+  const introHeight = document.querySelector('.intro').offsetHeight;
+  const topButton = document.getElementById('top-button');
+  const $topButton = $('#top-button');
+
+  window.addEventListener(
+    'scroll',
+    function () {
+      if (window.scrollY > introHeight) {
+        $topButton.fadeIn();
+      } else {
+        $topButton.fadeOut();
+      }
+    },
+    false
+  );
+
+  topButton.addEventListener('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, 500);
+  });
+
+  const hand = document.querySelector('.emoji.wave-hand');
+
+  function waveOnLoad() {
+    hand.classList.add('wave');
+    setTimeout(function () {
+      hand.classList.remove('wave');
+    }, 2000);
+  }
+
+  setTimeout(function () {
+    waveOnLoad();
+  }, 1000);
+
+  hand.addEventListener('mouseover', function () {
+    hand.classList.add('wave');
+  });
+
+  hand.addEventListener('mouseout', function () {
+    hand.classList.remove('wave');
+  });
+
+  window.sr = ScrollReveal({
+    reset: false,
+    duration: 600,
+    easing: 'cubic-bezier(.694,0,.335,1)',
+    scale: 1,
+    viewFactor: 0.3,
+  });
+
+  sr.reveal('.background');
+  sr.reveal('.skills');
+  sr.reveal('.experience', { viewFactor: 0.2 });
+  sr.reveal('.featured-projects', { viewFactor: 0.1 });
+  sr.reveal('.other-projects', { viewFactor: 0.05 });
 });
