@@ -6,10 +6,6 @@ var typeWriterElement = document.getElementById('typewriter');
 // The TextArray:
 var textArray = ["building beautiful interfaces","inspiring women in tech. ", "feeding my artistic spirit."];
 
-// You can also do this by transfering it through a data-attribute
-// var textArray = typeWriterElement.getAttribute('data-array');
-
-
 // function to generate the backspace effect
 function delWriter(text, i, cb) {
 	if (i >= 0 ) {
@@ -57,22 +53,12 @@ setTimeout( function () {
 	StartWriter(0);
 },1000);
 
-// var app = document.getElementById('app');
-//
-// var typewriter = new Typewriter(app, {
-//     loop: true
-// });
-//
-// typewriter.typeString('building beautiful interfaces & experiences')
-//     .pauseFor(2500)
-//     .deleteAll()
-//     .typeString('feeding my creativity')
-//     .pauseFor(2500)
-//     .deleteAll()
-//     .typeString('<strong>growing!</strong>')
-//     .pauseFor(2500)
-//     .start();
 
+function toggleNightMode() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "night-mode" ? "light-mode" : "night-mode";
+}
 
 const toggle = document.querySelector('.toggle');
 
