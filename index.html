@@ -1,86 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <title>Diane Designed</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diane Korongy's personal portfolio">
+    <meta name="keywords" content="Web Developer Designer NYC">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no" />
     <meta
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
     />
-
-    <link rel="shortcut icon" sizes="192x192" href="images/techie.png" />
-
-    <title>Diane Korongy</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway:400"
     />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/animate.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css"> <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
   </head>
-  <body id="minimos-1">
-    <div class="preloader abs-center"><div class="spinner"></div></div>
+  <body>
+    <div id="loading"></div>
+    <div class="wrapper">
 
-    <div class="content-wrapper">
-      <div class="v-center">
-        <div class="main-content">
-          <link
-            href="https://afeld.github.io/emoji-css/emoji.css"
-            rel="stylesheet"
-          />
-          <p>
-            <!-- <img src="images/techie.png" width="25" height="25"> -->
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" width="40" alt="Logo"></a>
+      <div id="main" class="main">
+        <div class="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                  <div class="intro-title wow fadeInUp">
+                    <h1>Hi, I'm Diane.</h1>
+                  </div>
+                  <h1 class="wow fadeInUp">I’m a front-end and mobile developer and designer who loves finding problems and solving them creatively.  I love to seek out new ideas that fuel my entrepreneurial mindset and
+                  insatiable curiosity.
+                </h1>
+                  <div class="sub-content wow fadeInUp">
+                    <p><span>Side Hustle:</span><img src="assets/images/agave.png" width="30" alt="Agave"/> <a href="https://agaveco.co"> Agave Co. </a> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <i class="fa fa-terminal"></i> Diane is a designer &
-            fullstack developer who passionately creates, travels, codes, and
-            seeks out new ideas to fuel her entrepreneurial mindset and
-            insatiable curiosity.
-          </p>
-          <br />
+          <div class="work wow fadeInUp">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="row portfolio_container">
+                    <!-- singular item -->
+                    <div class="custompadding col-sm-6  design">
+<!--
+                      href="project.html"  -->
+                      <!-- <span class="singular-portfolio-item"> -->
+                        <img src="assets/images/candidmobile.png" alt="candid mobile" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>Candid Mobile App</h1>
+                          <p>AI Assisted Technical Interview Coach</p>
+                          <p>Work in progress/prototyping phase - Sketch | Invision | React Native | Firebase | Api.AI (Dialogflow) </p>
+                        </div>
+                      <!-- </span> -->
+                    </div>
+                    <!-- singular item end -->
 
-          <ul>
-            <li>
-              <a href="https://dianekorongy.myportfolio.com/">
-                <i class="fa fa-briefcase"></i> Projects</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/diaaanek"
-                ><i class="fa fa-github"></i> Github</a
-              >
-            </li>
-            <li>
-              <a href="https://medium.com/@diaaanek">
-                <i class="fa fa-medium"></i> Blog</a
-              >
-            </li>
-            
-            <li>
-              <a href="mailto:dkorongy@gmail.com">
-                <i class="fa fa-envelope"></i> Contact
-              </a>
-            </li>
+                    <!-- singular item -->
+                    <div class="custompadding col-sm-6  brand ecommerce">
+                      <a href="https://candidapp.co" target="_blank" class="singular-portfolio-item">
+                        <img src="assets/images/candidweb.png" alt="candid web app" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>Candid Web Application</h1>
+                          <p>A technical prep/learning platform application for developers & coders </p>
+                          <p> Full Stack Application | Mockups | HTML/CSS | Javascript | React.js | Google OAuth | Firebase </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- singular item end -->
 
-            <p>
-             Currently available for freelance work* <li><i class="fa fa-map-marker" style="font-size:25px"></i></li>
-              NJ/NYC
-            </p>
-          </ul>
-        </div>
-      </div>
-    </div>
+                    <!-- singular item -->
+                    <div class="custompadding col-sm-6  webdev design">
+                      <a href="https://letzspoon.netlify.com" target="_blank" class="singular-portfolio-item">
+                        <img src="assets/images/spoon.png" alt="let's spoon" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>Let's Spoon</h1>
+                          <p>Full Stack Application </p>
+                          <p> Built with React, Javascript, HTML/CSS, Rails, Postgres, Leaflet and Yelp Fusion API</p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- singular item end -->
 
-    <div class="sven-badge">Made with &hearts; Diane Korongy</div>
+                    <!-- singular item -->
+                    <div class="custompadding col-sm-6  brand ecommerce">
+                      <a href="wsj.html" class="singular-portfolio-item">
+                        <img src="assets/images/wsj-1.png" alt="image" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>WSJ Connect</h1>
+                          <p> Customer Experience Designer | Dow Jones Business Plan Competition Winner </p>
+                          <p>For ambitious, motivated students,
+WSJ Connect provides a portal that
+channels academic interests and
+passions into future careers, on a
+personalized, easy-to-use interface.</p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- singular item end -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-    <script src="js/dependencies.js"></script>
-    <script src="js/main.js"></script>
+
+                    <!-- singular item -->
+                    <div class="custompadding col-sm-6   webdev ecommerce">
+                      <a href="https://agaveco.co" target="_blank" class="singular-portfolio-item">
+                        <img src="assets/images/agaveweb.png" alt="image" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>Agave Co.</h1>
+                          <p> Agave Co. connects new developers entering the industry with start-up/small business' web and mobile related needs. Emphasis on creating products and completing projects through an agile approach - consultation, collaboration, and inspiration. </p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- singular item end -->
+
+                    <div class="custompadding col-sm-6  port">
+                      <!-- <a href="index.html" class="singular-portfolio-item"> -->
+                        <img src="assets/images/Astrodom.png" alt="astrodom game" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>Astrodom</h1>
+                          <p>Astrodom is a single page, space themed educational game application intended for (children) to learn the Javascript event loop/callstack.</p>
+                        </div>
+                      <!-- </a> -->
+                    </div>
+                    <!-- singular item end -->
+
+                    <div class="custompadding col-sm-6  port">
+                      <!-- <a href="index.html" class="singular-portfolio-item"> -->
+                        <img src="assets/images/puppyme.png" alt="astrodom game" class="img-responsive" />
+                        <div class="singular-project-content">
+                          <h1>PuppyMe</h1>
+                          <p>Save and share the cutest puppy stickers via iMessage! Available on the iOS App Store</p>
+                        </div>
+
+                    </div>
+                    <!-- singular item end -->
+                  </div>
+                </div><!-- Col-md-6 -->
+              </div>
+            </div>
+          </div><!-- Work -->
+
+          <div class="profile wow fadeInUp">
+            <div class="container custompadding">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="profile-content">
+                    <p class="bold">I am Diane Korongy.
+                    </p>
+                    <p>I am a creative, technical solutions-driven full stack developer with a passion for design/UX, intuitive functionality, and accessibility.
+
+
+                    </p>
+                    <p>With experience in Rails, Javascript, React/Redux, SQL, HTML/CSS, Swift and iOS, my goal is to build meaningful products and contributions in dynamic teams.
+
+
+                    </p>
+                    <p>
+                      Currently freelancing (agaveco.co) and always looking for new projects, app ideas, or engineering opportunities in AI, mobile, and especially start-up environments!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                  <div class="profile-highlights">
+                    <div class="experience">
+                      <h4>Experience</h4>
+                      <ul>
+
+
+
+                          <li>Creative Developer, Agave Co.</li>
+                          <li>Full Stack Dev, Flatiron School<li>
+
+                        <li>Support Engineer, iCIMS<li>
+                            <li>UX Designer, Dow Jones</li>
+                            <li>Rutgers University, BS</li>
+                              <li>Studied Information Technology, Computer Science, & Statistics </li>
+
+
+                      </ul>
+                    </div>
+                    <div class="awards">
+                      <h4>Tech Stack</h4>
+                      <ul>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                        <li>React.js, Redux</li>
+                        <li>Node.js/Express</li>
+                        <li> Rails</li>
+                        <li>SQL, Databases</li>
+                        <li> Swift, iOS</li>
+                        <li> Wireframing, Prototyping</li>
+                        <li>UX/UI Design</li>
+                        <li>Graphic Design</li>
+                        <li> Adobe Suite, Sketch</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- Profile -->
+<br> <br>
+          <!-- <div class="services wow fadeInUp">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                  <div class="col-md-3">
+                    <div class="service-block text-center">
+                      <div class="icon">
+                        <i class="ion-ios-basketball"></i>
+                      </div>
+                      <div class="service-text">
+                        <p>I build websites that don't fly.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-md-offset-1">
+                    <div class="service-block text-center">
+                      <div class="icon">
+                        <i class="ion-social-github"></i>
+                      </div>
+                      <div class="service-text">
+                        <p>I write code that doesn't bite.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-md-offset-1">
+                    <div class="service-block text-center">
+                      <div class="icon">
+                        <i class="ion-xbox"></i>
+                      </div>
+                      <div class="service-text">
+                        <p>I design games that don't fail.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- Services -->
+
+          <div class="footer wow fadeInUp">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="contact-link text-center">
+                    <img class="img-circle" src="assets/images/logo.png" width="80" alt="Icon">
+                    <a href="mailto:dkorongy@gmail.com" target="_top">dkorongy@gmail.com</a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-4">
+                  <div class="social">
+                    <ul>
+
+                        <li>
+                          <a href="https://dianekorongy.myportfolio.com/">
+                            <i class="fa fa-briefcase"></i> Projects</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://github.com/diaaanek"
+                            ><i class="fa fa-github"></i> Github</a
+                          >
+                        </li>
+                        <li>
+                          <a href="https://medium.com/@diaaanek">
+                            <i class="fa fa-medium"></i> Blog</a
+                          >
+                        </li>
+
+                        <li>
+                          <a href="mailto:dkorongy@gmail.com">
+                            <i class="fa fa-envelope"></i> Contact
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-8 ">
+                  <div class="address">
+                    <h2>Diane Korongy &copy;  <br class="hidden-xs"> NJ | NYC | Wherever </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scroll To Top -->
+
+            <a id="back-top" class="back-to-top page-scroll" href="#main">
+            <i class="ion-ios-arrow-up"></i>
+            </a>
+
+          <!-- Scroll To Top Ends-->
+
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/scrollingnav.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
   </body>
 </html>
