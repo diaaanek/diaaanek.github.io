@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work .container::before {
-	content: "Projects: Below are some projects that are UI/UX DESIGN OR DEVELOPMENT OR BOTH ";
+	content: "Featured Projects";
 	position: absolute;
 	left: 50px;
 	top: 50px;
