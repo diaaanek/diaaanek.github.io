@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta property='og:title' content='Diane Designed"/>
-<meta property='og:image' content='https://cdn3.iconfinder.com/data/icons/web-design-and-development-glyph-vol-1/64/web-development-glyph-05-512.png"/>
-<meta property='og:description' content='Design and Development Port"/>
-<meta property='og:url' content='dianedesigned.com" />
+<html>
 
-    <title>Diane Designed</title>
+<head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139835856-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139835856-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-139835856-1');
-</script>
+    gtag('config', 'UA-139835856-1');
+  </script>
 
-
-    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Diane Korongy's personal portfolio">
     <meta name="keywords" content="Web Developer Designer NYC">
@@ -31,390 +24,311 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
     />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/nav.css" rel="stylesheet">
+    <link href="resources/css/footer.css" rel="stylesheet">
+    <link href="resources/css/queries.css" rel="stylesheet">
 
-    <!-- Resource styles -->
+    <!-------------- FAVICONS -------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
 
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/ionicons.min.css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
-  </head>
-  <body>
-    <div id="loading"></div>
-    <div class="wrapper">
+    <title>Diane Korongy - Artist, Coder, Design Thinker</title>
+</head>
 
-      <a href="index.html" class="logo"><img src="assets/images/logo.png" width="40" alt="Logo"></a>
-      <div id="main" class="main">
-        <div class="intro">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                  <div class="intro-title wow fadeInUp">
-                    <h1>Hi, I'm Diane.</h1>
-                  </div>
-                  <h1 class="wow fadeInUp">I’m a front-end app developer and ui designer who loves finding problems and solving them creatively.  I geek out on just about anything disruptive, entrepreneurial, AI, space, and art-related ⚡⚡⚡
-                </h1>
-                  <div class="sub-content wow fadeInUp">
-                    <p><span>Side Hustle:</span><img src="assets/images/agave.png" width="25" alt="Agave"/> <a href="https://agaveco.co"> Agave Co. </a> </p>
-                      <p><span>Github:</span> <a href="https://github.com/diaaanek"> @diaaanek </a> </p>
-                      <p><span>Blog:</span> <a href="https://medium.com/@diaaanek"> Medium </a> </p>
+<body>
 
-                    </div>
-                  </div>
+    <!-------------- NAV BAR -------------->
 
-                </div>
+    <nav id="main-nav" class="js--main-nav">
+        <a href="#header" class="main-nav__logo">diane.</a>
+        <a href="#projects" class="main-nav__link">builds</a>
+        <a href="#bylines" class="main-nav__link">art</a>
+        <a href="about" class="main-nav__link">about</a>
+        <a href="#contact" class="main-nav__link">contact</a>
+        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <!-------------- MOBILE NAV OVERLAY -------------->
+
+    <!-- The overlay -->
+    <div id="mobileNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
+
+      <!-- Overlay content -->
+      <div class="overlay-links">
+        <a href="#projects" onclick="closeNav()">builds</a>
+        <a href="#bylines" onclick="closeNav()">ux/a>
+        <a href="about">about</a>
+        <a href="#contact" onclick="closeNav()">contact</a>
+      </div>
+
+    </div>
+
+    <!-------------- HEADER -------------->
+
+    <header id="header">
+        <h1><span class="unicorn-emoji">🦄</span><br>Hi, I'm Diane. I paint, design, and code.</h1>
+        <h2>I’m a front-end developer, aspiring entrepreneur, and ux/ui designer based in NYC - who loves finding problems and solving them creatively.</h2>
+        <br/><br/>
+        <p> Currently under construction, working on routes, image resizing/editing, and project content - some pages may not work</p>
+    </header>
+
+
+    <!-------------- PROJECTS -------------->
+
+    <section id="projects">
+
+      <!-- PROJECT 0 -->
+      <figure class="project-left">
+          <div class="project__content">
+              <div class="project__title">
+                  <p class="project__type">UI Engineer | Front-end Artichtech </p>
+                  <p class="project__heading"><a href="candidapp.co" class="project__link">Financial Dashboard</a></p>
               </div>
+          <p class="project__description">
+              <span class="challenge">The challenge:</span> Through my
+
+          </p>
+          <div class="project__details">
+            <p class="project__detail"><span class="emoji">🔍</span>Wireframing, prototyping </p>
+            <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, React Native</p>
+          </div>
+        </div>
+          <div class="project__hero">
+              <a href="mindful-couple"><img src="resources/img/images/fin.png" alt="candid-mobile-app" class="project__img"></a>
+          </div>
+      </figure>
+
+
+      <!-- PROJECT 1 -->
+      <figure class="project-left">
+          <div class="project__content">
+              <div class="project__title">
+                  <p class="project__type">Design Research + Full stack Code</p>
+                  <p class="project__heading"><a href="https://candidapp.co" class="project__link">Candid</a></p>
+              </div>
+          <p class="project__description">
+              <span class="challenge">The challenge:</span> Capstone full stack application project. Create a real world app with a React front-end and backend of your choice. <em>How would I go about creating a technical learning application for developers?</em>
+              <br/><br/>
+                <a href="https://candidapp.co">View Live Here</a>
+          </p>
+
+
+
+            <br/>
+          <div class="project__details">
+            <p class="project__detail"><span class="emoji">🔍</span>Wireframing, Prototyping, Application Design</p>
+            <p class="project__detail"><span class="emoji">💪</span>Material UI, Custom CSS, React.js + Google OAuth + Firebase DB</p>
+          </div>
+        </div>
+          <div class="project__hero">
+              <a href="candidapp.co"><img src="resources/img/can.png" alt="Candid App" class="project__img"></a>
+          </div>
+      </figure>
+
+        <!-- PROJECT 2 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="astro"><img src="resources/img/astrodom1.png" alt ="Astrodom" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type"> Custom CSS Design + Full Stack Code</p>
+                    <p class="project__heading"><a href="oyama" class="project__link">Astrodom</a></p>
+                </div>
+            <p class="project__description">
+              <span class="challenge">The Challenge:</span> Creating a full stack application with a vanilla javascript front end and a seperate Rails API. <em>How can we use a Rails API to interface with the Game Board Logic?</em>
+              <br/> <br/>
+              <a href="https://github.com/diaaanek/astrodom">Repo Link</a>
+            </p>
+            <div class="project__details">
+
+              <p class="project__detail"><span class="emoji">💪</span>HTML, CSS, Vanilla Javascript, Rails API</p>
             </div>
           </div>
+        </figure>
 
-          <div class="work wow fadeInUp">
-            <div class="container">
-
-              <div class="row">
-
-                <div class="col-sm-12">
-
-                  <div class="row portfolio_container">
-
-                    <div class="custompadding col-sm-6  design">
-                      <a href="href="http://butterfin.netlify.com"" target="_blank" class="singular-portfolio-item">
-
-
-                        <img src="assets/images/fin.png" alt="financial dash" class="img-responsive" />
-                      </a>
-                        <div class="singular-project-content">
-                          <h1>Financial Dashboard</h1>
-                          <p>Front-end Architech Code Challenge</p>
-                          <p>Built a functional dashboard UI with Bootstrap, React (Hooks), Async, and FusionGraphs.  </p>
-                            <p> Live Demo: <a href="http://butterfin.netlify.com"> Here </a>
-                            <p> Code:  </p>
-                        </div>
-                      <!-- </span> -->
-                    </div>
-                    <!-- singular item end -->
-
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  design">
-<!--
-                      href="project.html"  -->
-                      <!-- <span class="singular-portfolio-item"> -->
-                        <img src="assets/images/dss.png" alt="dashboard" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Trackrr</h1>
-                          <p>Responsive Dashboard Inspiration</p>
-                           <p> UI Design: <a href=""> Here </a> - Photoshop | Invision | Wireframing </p>
-                           <p> <a href="https://trackrr.netlify.com"> Front-end Code Prototype </a> </p>
-                           <p> Playing around with custom CSS, flexbox grid, and React UI's</p>
-
-                        </div>
-                      <!-- </span> -->
-                    </div>
-                    <!-- singular item end -->
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  design">
-<!--
-                      href="project.html"  -->
-                      <!-- <span class="singular-portfolio-item"> -->
-                        <img src="assets/images/candidmobile.png" alt="candid mobile" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Candid Mobile Design</h1>
-                          <p>Personal Assisted Technical Interview Coach</p>
-                          <p>Work in progress/prototyping phase - Sketch | Invision | Api.AI (Dialogflow) </p>
-                          <p> Design: <a href=""> Here </a>
-                            <p> Code: Coming Soon </p>
-                        </div>
-                      <!-- </span> -->
-                    </div>
-                    <!-- singular item end -->
-
-
-                                        <!-- singular item -->
-                                        <div class="custompadding col-sm-6  brand ecommerce">
-    <a href="https://geocv.com" target="_blank" class="singular-portfolio-item">
-                                            <img  src="assets/images/geocv.png" alt="geocv website" class="img-responsive" />
-                                            <div class="singular-project-content">
-                                              <h1>GeoCV Website</h1>
-                                              <p>Client Work Website Integration </p>
-                                              <p> Full-Stack Development | HTML/CSS/SASS | Javascript | Node.js | Gulp | TypeForm Integration</p>
-                                            </div>
-                                          </a>
-                                        </div>
-                                        <!-- singular item end -->
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  brand ecommerce">
-    <a href="https://candidapp.co" target="_blank" class="singular-portfolio-item">
-                        <img src="assets/images/candidweb.png" alt="candid web app" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Candid Web Application</h1>
-
-                          <p>A technical prep/learning platform application for developers & coders </p>
-                          <p> Full Stack Application | Wireframing | HTML/CSS | Javascript | React.js | Google OAuth | Firebase </p>
-                        </div>
-</a>
-                    </div>
-                    <!-- singular item end -->
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  webdev design">
-    <a href="https://letzspoon.netlify.com" target="_blank"  class="singular-portfolio-item">
-                        <img src="assets/images/spoon.png" alt="let's spoon" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Let's Spoon</h1>
-                          <p> A Tinder-like swiping web app that matches users based on food preferences.</p>
-
-                          <p> Full Stack Development | Javascript | HTML/CSS | React.js | Rails API | Postgres DB
-                          | Leaflet Maps API | Yelp Fusion API </p>
-                        </div>
-</a>
-                    </div>
-                    <!-- singular item end -->
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  webdev design">
-    <a href="https://github.com/diaaanek" target="_blank" class="singular-portfolio-item">
-                        <img src="assets/images/letsspoon2.png" alt="let's spoon mobile version" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Let's Spoon Mobile</h1>
-                          <p> A Tinder-like swiping web app that matches users based on food preferences. (Mobile Version)</p>
-
-                          <p> UI Design Prototype | Sketch | Invision  </p>
-                        </div>
-</a>
-                    </div>
-                    <!-- singular item end -->
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6  brand ecommerce">
-                      <a href="wsj.html" class="singular-portfolio-item">
-                        <img src="assets/images/wsj-1.png" alt="image" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>WSJ Connect</h1>
-                          <p> CUSTOMER EXPERIENCE/UX DESIGN | 1st Place Dow Jones Business Plan Competition  </p>
-                          <p>For ambitious, motivated students,
-                WSJ Connect provides a portal that
-                channels academic interests and
-                passions into future careers, on a
-                personalized, easy-to-use interface.</p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- singular item end -->
-
-
-                    <!-- singular item -->
-                    <div class="custompadding col-sm-6   webdev ecommerce">
-                      <a href="https://agaveco.co" target="_blank" class="singular-portfolio-item">
-                        <img src="assets/images/agaveweb.png" alt="image" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Agave Co.</h1>
-                          <p> I founded Agave Co. to get real world work experience via start-up/small business' web and mobile related needs. First month *~ 5k profit. Emphasis on creating products and completing projects through an agile approach - consultation, collaboration, and inspiration. </p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- singular item end -->
-
-                    <div class="custompadding col-sm-6  port">
-                      <!-- <a href="index.html" class="singular-portfolio-item"> -->
-                        <img src="assets/images/astrodom.png" alt="astrodom game" class="img-responsive" />
-                        <div class="singular-project-content">
-                          <h1>Astrodom</h1>
-                          <p>Astrodom is a single page, space themed educational game application intended for (children) to learn the Javascript event loop/callstack.</p>
-                          <p> HTML/CSS Flexbox Grid | Custom UI | Vanilla JS | Rails API | Postgres DB/SQL
-
-                        </div>
-                      <!-- </a> -->
-                    </div>
-                    <!-- singular item end -->
-
-                    <div class="custompadding col-sm-6  port">
-                      <a href="https://appadvice.com/app/puppyme/1336320529" target="_blank" class="singular-portfolio-item">
-                        <img src="assets/images/puppyme.png" alt="astrodom game" class="img-responsive" />
-                        <div  class="singular-project-content">
-                          <h1>PuppyMe</h1>
-                          <p>Save and share the cutest puppy stickers via iMessage! Available on the iOS App Store for free </p>
-                          <p> Swift | iOS | XCode | Photoshop | Sketch </p>
-                            <p> On App Store 2017-2018 | 10,000+ International Downloads </p>
-                        </div>
-</a>
-                    </div>
-                    <!-- singular item end -->
-                  </div>
-                </div><!-- Col-md-6 -->
-              </div>
-            </div>
-          </div><!-- Work -->
-
-          <div class="profile wow fadeInUp">
-            <div class="container custompadding">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="profile-content">
-                    <!-- <p class="bold">I am Diane Korongy.
-                    </p> -->
-                    <p>I am a creative, technical solutions-driven full stack developer with a passion for design/UX, intuitive functionality, and accessibility.
-
-
-                    </p>
-                    <p>With experience in Rails, Javascript, React/Redux, SQL, HTML/CSS, Swift and iOS, my goal is to build meaningful products and contributions in dynamic teams.
-
-
-                    </p>
-                    <p>
-                      Currently freelancing (agaveco.co) and always looking for new projects, app ideas, or engineering opportunities in AI, mobile, and especially start-up environments! Oh and I'm also an artist!
-                    </p>
-                    <p> <img src="assets/images/art.png" alt="my art" class="img-responsive" />
-                  </div>
+        <!-- PROJECT 3 -->
+        <figure class="project-left">
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">UX Design Research + Product Ideation</p>
+                    <p class="project__heading"><a href="candidapp.co" class="project__link">Candid AI</a></p>
                 </div>
-                <div class="col-md-6 col-md-offset-1">
-                  <div class="profile-highlights">
-                    <div class="experience">
-                      <h4>Experience</h4>
-                      <ul>
-
-
-
-                          <li>Creative Developer, Agave Co.</li>
-                          <li>Full Stack Dev, Flatiron School<li>
-
-                        <li>Support Engineer, iCIMS<li>
-                            <li>UX Designer, Dow Jones</li>
-                            <li>Rutgers University, BS</li>
-                              <li>Studied Information Technology, Computer Science, & Statistics </li>
-
-
-                      </ul>
-                    </div>
-                    <div class="awards">
-                      <h4>Tech Stack</h4>
-                      <ul>
-                        <li>HTML/CSS</li>
-                        <li>Javascript &hearts;</li>
-                        <li>React.js, Redux</li>
-                        <li>Node.js/Express</li>
-                        <li> Rails</li>
-                        <li>SQL, Databases</li>
-                        <li> Swift, iOS, XCode &hearts;</li>
-                        <li> Wireframing, Prototyping</li>
-                        <li>UX/UI Design &hearts;</li>
-                        <li>Graphic Design</li>
-                        <li> Adobe Suite, Sketch</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- Profile -->
-<br> <br>
-          <!-- <div class="services wow fadeInUp">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-11 col-md-offset-1">
-                  <div class="col-md-3">
-                    <div class="service-block text-center">
-                      <div class="icon">
-                        <i class="ion-ios-basketball"></i>
-                      </div>
-                      <div class="service-text">
-                        <p>I build websites that don't fly.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-md-offset-1">
-                    <div class="service-block text-center">
-                      <div class="icon">
-                        <i class="ion-social-github"></i>
-                      </div>
-                      <div class="service-text">
-                        <p>I write code that doesn't bite.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-md-offset-1">
-                    <div class="service-block text-center">
-                      <div class="icon">
-                        <i class="ion-xbox"></i>
-                      </div>
-                      <div class="service-text">
-                        <p>I design games that don't fail.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- Services -->
-
-          <div class="footer wow fadeInUp">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="contact-link text-center">
-                    <img class="img-circle" src="assets/images/logo.png" width="80" alt="Icon">
-                    <a href="mailto:dkorongy@gmail.com" target="_top">dkorongy@gmail.com</a>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xs-4">
-                  <div class="social">
-                    <ul>
-
-                        <li>
-                          <a href="https://dianekorongy.myportfolio.com/">
-                            <i class="fa fa-briefcase"></i> Projects</a
-                          >
-                        </li>
-                        <li>
-                          <a href="https://github.com/diaaanek"
-                            ><i class="fa fa-github"></i> Github</a
-                          >
-                        </li>
-                        <li>
-                          <a href="https://medium.com/@diaaanek">
-                            <i class="fa fa-medium"></i> Blog</a
-                          >
-                        </li>
-
-                        <li>
-                          <a href="mailto:dkorongy@gmail.com">
-                            <i class="fa fa-envelope"></i> Contact
-                          </a>
-                        </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-6 col-xs-8 ">
-                  <div class="address">
-                    <h2>Diane Korongy &copy;  <br class="hidden-xs"> NJ | NYC | Wherever </h2>
-                  </div>
-                </div>
-              </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> Through my experience, research, and observation, I’ve decided to create a mobile application that will use AI to be a candidate’s personalized “technical interview prep coach” throughout the entire process. 
+                <br/><br/><em>I am currently in the prototype and ideation phase and looking to connect and collaborate, as this currently a side project and self funded but hopefully we can build out something great! </em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>User interviews, Mockups, prototyping </p>
+              <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, Swift/iOS, Xcode</p>
             </div>
           </div>
+            <div class="project__hero">
+                <a href="mindful-couple"><img src="resources/img/candidmock.png" alt="candid-mobile-app" class="project__img"></a>
+            </div>
+        </figure>
 
-          <!-- Scroll To Top -->
+        <!-- PROJECT 4 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="wsj"><img src="resources/img/images/wsj-1.png" alt ="WSJ Connect" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">Ideation + Product + Business Design</p>
+                    <p class="project__heading"><a href="wsj.html" class="project__link">WSJ Connect</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> How can we connect WSJ product suite into Millenial demographics/market?
+                <br/>
+      Created app for ambitious, motivated students,
+      WSJ Connect provides a portal that
+      channels academic interests and
+      passions into future careers, on a
+      personalized, easy-to-use interface.
+      <br/>
+      <!-- <a href="">See Live Prototype </a> -->
+      <br/><em>1st Place Business Plan Competion Winner</em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Interviews, Mapping, Flow charts</p>
+              <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, Flinto, Invision</p>
+            </div>
+          </div>
+        </figure>
 
-            <a id="back-top" class="back-to-top page-scroll" href="#main">
-            <i class="ion-ios-arrow-up"></i>
-            </a>
+        <!-- PROJECT 5 -->
+        <figure class="project-left">
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">Front-end UI/UX Design </p>
+                    <p class="project__heading"><a href="candidapp.co" class="project__link">Let's Spoon</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> Through my
 
-          <!-- Scroll To Top Ends-->
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Wireframing, prototyping </p>
+              <p class="project__detail"><span class="emoji">💪</span>React, Spring Hooks, Rails API, Yelp Fusion API, Leaflet Maps</p>
+            </div>
+          </div>
+            <div class="project__hero">
+                <a href="mindful-couple"><img src="resources/img/images/spoon.png" alt="candid-mobile-app" class="project__img"></a>
+            </div>
+        </figure>
 
 
-      </div> <!-- Main -->
-    </div><!-- Wrapper -->
+        <!-- PROJECT 6 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="wsj"><img src="resources/img/images/wsj-1.png" alt ="WSJ Connect" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">Ideation + Product + Business Design</p>
+                    <p class="project__heading"><a href="wsj.html" class="project__link">WSJ Connect</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> For ambitious, motivated students,
+      WSJ Connect provides a portal that
+      channels academic interests and
+      passions into future careers, on a
+      personalized, easy-to-use interface. <em>1st Place Business Plan Compeition Winner</em>
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Reasearch</p>
+              <p class="project__detail"><span class="emoji">💪</span>Photoshop, Flinto, Invision</p>
+            </div>
+          </div>
+        </figure>
 
 
-    <!-- Jquery and Js Plugins -->
-    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/plugins.js"></script>
-    <script type="text/javascript" src="assets/js/scrollingnav.js"></script>
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-  </body>
+        <!-- PROJECT 6 -->
+        <figure class="project-left">
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">UI/UX Design </p>
+                    <p class="project__heading"><a href="candidapp.co" class="project__link">Let's Spoon</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">The challenge:</span> Through my
+
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Wireframing, prototyping </p>
+              <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, React Native</p>
+            </div>
+          </div>
+            <div class="project__hero">
+                <a href="mindful-couple"><img src="resources/img/images/letsspoon2.png" alt="candid-mobile-app" class="project__img"></a>
+            </div>
+        </figure>
+    </section>
+
+    <!-------------- BYLINES -------------->
+    <section id="bylines">
+        <h3 class="bylines-hed"> Gallery coming soon...</h3>
+        <!-- PROJECT 3 -->
+        <figure class="project-right">
+            <div class="project__hero">
+                 <a href="art"><img src="resources/img/art.png" alt ="art lion" class="project__img"></a>
+            </div>
+            <div class="project__content">
+                <div class="project__title">
+                    <p class="project__type">Paint + Sketching + Spray Paint</p>
+                    <p class="project__heading"><a href="wsj.html" class="project__link">Space Lion Collection</a></p>
+                </div>
+            <p class="project__description">
+                <span class="challenge">Creative Outlet:</span> I take inspiration from nature, human, and space. My style is personal and unique and creating a blank canvas (or js file) from ideation to finished product is something that I am passionate about.  Contact for comissions or collaboration.
+            </p>
+            <div class="project__details">
+              <p class="project__detail"><span class="emoji">🔍</span>Sold</p>
+              <p class="project__detail"><span class="emoji">💪</span>38 x 48 canvas </p>
+            </div>
+
+          </div>
+        </figure>
+    </section>
+
+    <!-------------- GET IN TOUCH -------------->
+    <section id="contact">
+        <h3 class="contact-hed">Need some art? Some websites? Or geek out on anything disruptive, AI, space, and art-related ⚡⚡⚡</h3>
+        <p class="contact-dek">I'd love to connect! </p>
+        <a href="mailto:dkorongy@gmail.com" class="contact-email">dkorongy@gmail.com</a>
+    </section>
+
+    <!-------------- FOOTER -------------->
+    <footer>
+        <div class="footer-box">
+            <a href="#header" class="footer-box__logo">diane.</a>
+            <div class="footer-box__delight">Have an awesome day. ✨</div>
+            <div class="social-links">
+                <a href="https://github.com/diaaanek" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dianeelizabeth/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://medium.com/diaaanek" class="social-link" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="mailto:dkorongy@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-------------- SCRIPTS -------------->
+<script src="resources/js/script.js"></script>
+</body>
+
+
+
 </html>
