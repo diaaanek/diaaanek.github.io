@@ -29,7 +29,7 @@
 /* --- Up to 767px -- */
 @media only screen and (max-width: 767px) {
 
-    html { font-size: 10px; }
+    html { font-size: 16px; }
 
     header,
     #projects,

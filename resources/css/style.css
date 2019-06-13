@@ -63,9 +63,12 @@ PROJECTS
 #projects {
     display: flex;
     flex-direction: column;
-    padding-left: 120px;
+    padding-left: 150px;
 }
 
+.wsj{
+  width: 75%
+}
 .project-left,
 .project-right {
     max-width: 85%;
