@@ -67,7 +67,7 @@ h3 {
 PHOTO
 **************************************/
 
-.lisa-hero img { width: 100%; }
+.diane-hero img { width: 100%; }
 
 
 /**************************************
@@ -119,10 +119,10 @@ DETAILS
     margin-bottom:20px;
 }
 
-.summary__description { 
+.summary__description {
     font-size: 85%;
     font-weight: 300;
-    line-height: 140%;    
+    line-height: 140%;
 }
 
 /**************************************
@@ -150,7 +150,7 @@ QUERIES
 **************************************/
 
 /* --- Up to 1200px -- */
-@media only screen and (max-width: 1200px) {    
+@media only screen and (max-width: 1200px) {
     h1 { width: 95%; }
 }
 
@@ -158,54 +158,54 @@ QUERIES
 
 /* --- Up to 1023px -- */
 @media only screen and (max-width: 1023px) {
-    
+
     html { font-size: 18px; }
-    
+
     header { padding-bottom: 40px; }
-    
+
     .summary__block { padding-bottom: 60px; }
 }
 
 
 /* --- Up to 767px -- */
 @media only screen and (max-width: 767px) {
-    
+
     html { font-size: 16px; }
-    
+
     header,
     .summary__block,
     #contact,
     .education-logos { padding-left: 60px; }
-    
+
     header { padding-right: 100px; }
     h1 { width: 100%; }
     h2 { width: 100%; }
     h3 { width: 85%; }
-    
+
     section { padding: 15px 0px; }
-    
+
     #summary { max-width: 95%; }
 
 }
-    
+
 /* --- Up to 480px -- */
 @media only screen and (max-width: 480px) {
-    
+
     h1 { line-height: 1.075em; }
     h2 { line-height: 1.20em; }
-    
-    .education-logos { 
+
+    .education-logos {
         margin-top: -50px;
         margin-bottom: -50px;
         flex-direction: column;
         align-items: center;
-        max-width: 85%;
+        max-width: 75%;
     }
-    
+
     .education-logo img {
         width: 70%;
         height: auto;
         padding-bottom: 10px;
     }
-    
+
 }

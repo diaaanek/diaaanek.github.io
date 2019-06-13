@@ -33,7 +33,7 @@
 
     header,
     #projects,
-    .bylines__logos,
+
     #contact { padding-left: 60px; }
 
 
@@ -49,6 +49,7 @@
 
 
     .bylines__logos { max-width: 98%; }
+
 
 
 }
@@ -78,6 +79,7 @@
     .link-gq, .link-muse { display: none; }
 
     #contact { margin-top: 50px; }
+
 
 
 }

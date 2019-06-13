@@ -63,7 +63,7 @@ PROJECTS
 #projects {
     display: flex;
     flex-direction: column;
-    padding-left: 150px;
+    padding-left: 130px;
 }
 
 .wsj{
@@ -224,6 +224,7 @@ FOOTER
 .footer-box {
     display: flex;
     padding: 150px 120px 30px 120px;
+
 }
 
 .footer-box__logo {
