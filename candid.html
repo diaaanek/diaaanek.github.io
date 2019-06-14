@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139835856-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139835856-1');
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diane Korongy's personal portfolio">
+    <meta name="keywords" content="Web Developer Designer NYC">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/project.css" rel="stylesheet">
+    <link href="resources/css/nav.css" rel="stylesheet">
+    <link href="resources/css/footer.css" rel="stylesheet">
+    <link href="resources/css/queries.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-------------- FAVICONS -------------->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+
+    <title>PROJECT TITLE </title>
+</head>
+
+<body>
+
+    <!-------------- NAV BAR -------------->
+
+    <nav id="main-nav" class="js--main-nav">
+        <a href="index.html" class="main-nav__logo">diane.</a>
+        <a href="index.html#projects" class="main-nav__link">builds</a>
+        <a href="#art" class="main-nav__link">art</a>
+        <a href="about.html" class="main-nav__link">about</a>
+        <a href="#contact" class="main-nav__link">contact</a>
+        <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+    </nav>
+
+    <!-------------- MOBILE NAV OVERLAY -------------->
+
+    <!-- The overlay -->
+    <div id="mobileNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="#" class="mobile-close-icon"><i class="fas fa-times"></i></a>
+
+      <!-- Overlay content -->
+      <div class="overlay-links">
+        <a href="#projects" onclick="closeNav()">builds</a>
+        <a href="#art" onclick="closeNav()">ux/a>
+        <a href="about.html">about</a>
+        <a href="index.html#contact" onclick="closeNav()">contact</a>
+      </div>
+
+    </div>
+
+
+    <!-------------- HEADER -------------->
+
+        <header id="header">
+            <p class="superhed">DESIGN RESEARCH + FULL STACK CODE</p>
+            <h1>Candid</h1>
+            <h2>A technical prep/learning platform application for developers & coders. Made with React.js (create-react-app) and Firebase real time database. <em>How might we encourage a daily habit of keeping techincal skills sharp among coders and designers?</em></h2>
+        </header>
+
+        <!-------------- PROCESS -------------->
+
+        <section id="process">
+
+            <!-- SOLUTION -->
+            <figure class="process-right">
+                <div class="process__hero">
+                    <a href="candidapp.co" target="_blank"><img src="resources/img/candid.png" alt ="Candid App" class="process__img"></a>
+                </div>
+                <div class="process__content">
+                    <div class="process__title">
+                        <p class="process__type">The Solution</p>
+                        <p class="process__heading">A gamified technical learning platform </p>
+                    </div>
+                <p class="process__description">
+                  For this project, I completed a full stack application - from ideation to MVC in two weeks. The result? A friendly app that helps one study technical concepts.
+                </p>
+                <div class="process__details">
+                    <div><a href="https://github.com/diaaanek/candid" target="_blank">github</a></div>
+                    <div><a href="https://candidapp.co" target="_blank">see it live 👉</a></div>
+                </div>
+              </div>
+            </figure>
+
+            <!-- METHOD -->
+            <figure class="process-left">
+                <div class="process__content">
+                    <div class="process__title">
+                        <p class="process__type">Method</p>
+                        <p class="process__heading">Research</p>
+                    </div>
+                <p class="process__description">
+                  Alongside a thorough Google review, I spoke to 100+ people in different kinds of technical fields, studeis, and work environments to better understand how one learns and studies for technical concepts. Each phrase, style, and methodology, and pain point earned a Post-It note.
+                </p>
+              </div>
+                <div class="process__hero">
+                     <img src="https://www.canr.msu.edu/contentAsset/image/12d71c03-3522-40de-8436-2ec337ce4bae/fileAsset/filter//Resize,Jpeg/resize_w/490/jpeg_q/70" class="process__img">
+                </div>
+            </figure>
+
+            <!-- DESIGN PRINCIPLE 1 -->
+            <figure class="process-right">
+                <div class="process__hero">
+                     <img src="https://raw.githubusercontent.com/diaaanek/candid/master/public/images/mockup.png" alt="Ideation" class="process__img">
+                </div>
+                <div class="process__content">
+                    <div class="process__title">
+                        <p class="process__type">Design Principle</p>
+                        <p class="process__heading">Wireframing & Prototyping</p>
+                    </div>
+                <p class="process__description">
+                  I was then able to quickly deliver a sitemap through MockPlus. Since this was a full-stack application with routes, I had to justify every route that the user would hit - on both front and back end.
+                </p>
+              </div>
+            </figure>
+
+            <!-- DESIGN PRINCIPLE 2 -->
+            <figure class="process-left">
+                <div class="process__content">
+                    <div class="process__title">
+                        <p class="process__type">Design Principle</p>
+                        <p class="process__heading">Inspire MVC</p>
+                    </div>
+                <p class="process__description">
+                    From research and site mapping, I was able to quickly deliver a protoype with Invision and Adobe XD. After many iterations, I ws able to come across a design that was feasible to code and functional - all within the timeframe of two weeks.
+                </p>
+              </div>
+                <div class="process__hero">
+                  <div class="carousel"
+            data-flickity='{ "wrapAround": true }'>
+            <div class="carousel-cell"><img src="resources/img/mock1.png" alt="candid"/></div>
+            <div class="carousel-cell"><img src="resources/img/mock2.png" alt="candid"/></div>
+            <div class="carousel-cell"><img src="resources/img/mock3.png" alt="candid"/></div>
+            <div class="carousel-cell"><img src="resources/img/mock4.png" alt="candid"/></div>
+            <div class="carousel-cell"><img src="resources/img/mock5.png" alt="candid"/></div>
+          </div>
+
+                </div>
+            </figure>
+
+
+            <section>
+            <div class="scroll-arrow" id="scroll-left">
+                &#8592;
+              </div>
+              <ul id="imgList">
+                <li><img src="resources/img/mock1.png"/></li>
+                <li><img src="resources/img/mock2.png"/></li>
+                <li><img src="resources/img/mock3.png"/></li>
+                <li><img src="resources/img/mock4.png"/></li>
+                <li><img src="resources/img/mock5.png"/></li>
+                <li><img src="resources/img/mock1.png"/></li>
+              </ul>
+              <div class="scroll-arrow" id="scroll-right" onclick="scrollRight()">
+                &#8594;
+              </div>
+            </section>
+
+        </section>
+
+
+
+
+
+
+    <!-------------- MORE WORK -------------->
+    <section id="work">
+        <div class="work__links">
+            <p class="work__invite">Have a look at this next:</p>
+            <p><a href="next" class="work__link">what's next</a></p>
+        </div>
+    </section>
+
+
+    <!-------------- FOOTER -------------->
+    <footer>
+        <div class="footer-box">
+            <a href="#header" class="footer-box__logo">diane.</a>
+            <div class="footer-box__delight">Have an awesome day. ✨</div>
+            <div class="social-links">
+                <a href="https://github.com/diaaanek" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dianeelizabeth/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://medium.com/diaaanek" class="social-link" target="_blank"><i class="fab fa-medium"></i></a>
+                <a href="mailto:dkorongy@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Scroll To Top -->
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Scroll To Top Ends-->
+
+
+    <!-------------- SCRIPTS -------------->
+<script src="resources/js/script.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
