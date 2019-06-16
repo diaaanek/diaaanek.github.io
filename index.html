@@ -31,6 +31,7 @@
     <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
     <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/about.css" rel="stylesheet">
     <link href="resources/css/nav.css" rel="stylesheet">
     <link href="resources/css/footer.css" rel="stylesheet">
     <link href="resources/css/queries.css" rel="stylesheet">
@@ -51,7 +52,7 @@
     <nav id="main-nav" class="js--main-nav">
         <a href="#header" class="main-nav__logo">diane.</a>
         <a href="#projects" class="main-nav__link">builds</a>
-        <a href="#bylines" class="main-nav__link">art</a>
+        <a href="#art" class="main-nav__link">art</a>
         <a href="about.html" class="main-nav__link">about</a>
         <a href="#contact" class="main-nav__link">contact</a>
         <a href="#" class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
@@ -68,8 +69,8 @@
       <!-- Overlay content -->
       <div class="overlay-links">
         <a href="#projects" onclick="closeNav()">builds</a>
-        <a href="#bylines" onclick="closeNav()">ux/a>
-        <a href="about">about</a>
+        <a href="#art" onclick="closeNav()">art</a>
+        <a href="about.html">about</a>
         <a href="#contact" onclick="closeNav()">contact</a>
       </div>
 
@@ -90,7 +91,40 @@
 
 
     <!-------------- PROJECTS -------------->
+
     <section id="projects">
+
+
+
+      <!-- FINANCIAL DASH -->
+      <figure class="project-right">
+          <div class="project__hero">
+               <a href="http://butterfin.netlify.com" target="_blank"><img src="resources/img/bfin.png" class="project__img alt="financial-dashboard-app"></a>
+          </div>
+          <div class="project__content">
+            <div class="project__title">
+                <p class="project__type">UI Engineer | Frontend Architect </p>
+                <p class="project__heading"><a href=" " class="project__link">E-commerce UI</a></p>
+            </div>
+
+              <p class="project__description">
+                  <span class="challenge">THE CHALLENGE:</span> Build a responsive UI for fictional e-commerce site, with toggle/configurable CSS stylesheet
+                  <br/><br/>
+
+                  <br/> <br/>
+                  <a href="http://butterfin.netlify.com" target="_blank">Live Demo</a> |
+                    <a href="https://github.com/diaaanek/fin-dashboard" target="_blank">Repo Code</a>
+                </p>
+              </p>
+
+          <div class="project__details">
+            <p class="project__detail"><span class="emoji">🔍</span>UI Engineer </p>
+            <p class="project__detail"><span class="emoji">💪</span>React, Redux </p>
+          </div>
+        </div>
+      </figure>
+
+
       <!-- CANDID WEB -->
       <figure class="project-left">
           <div class="project__content">
@@ -359,8 +393,6 @@
             </div>
         </figure>
 
-
-
     </section>
 
     <!-------------- ART -------------->
@@ -391,8 +423,43 @@
         </figure>
     </section>
 
+    <!-- EDUCATION LOGOS -->
+        <section id="education">
+          <div class="education-logos">
+            <div class="education-logo">
+              <img
+                src="https://www.jitterbit.com/wp-content/uploads/2018/11/Rutgers-Logo-1.jpg"
+                class="education-logo"
+                alt="Rutgers University, 2017"
+              />
+            </div>
+            <div class="education-logo">
+              <img
+                src="https://media.glassdoor.com/sqll/964142/flatiron-school-squarelogo-1479222088421.png"
+              />
+            </div>
+            <div class="education-logo">
+              <img
+                src="resources/img/womentech.png"
+                class="education-logo"
+                alt="women techmakers"
+              />
+            </div>
+            <div class="education-logo">
+              <img
+                src="resources/img/lit.png"
+                class="education-logo"
+                alt="Latinas in tech"
+              />
+            </div>
+          </div>
+        </section>
+
+
     <!-------------- GET IN TOUCH -------------->
     <section id="contact">
+
+
         <h3 class="contact-hed">Need some art? Some websites? Or geek out on anything disruptive, AI, space, and art-related ⚡⚡⚡</h3>
         <p class="contact-dek">I'd love to connect! </p>
         <a href="mailto:dkorongy@gmail.com" class="contact-email">dkorongy@gmail.com</a>
