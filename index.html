@@ -53,7 +53,7 @@
 
     <!-------------- NAV BAR -------------->
 
-    <nav id="main-nav" class="js--main-nav sticky">
+    <nav id="main-nav" class="js--main-nav">
         <a href="#header" class="main-nav__logo">diane.</a>
         <a href="#projects" class="main-nav__link">builds</a>
         <a href="#art" class="main-nav__link">art</a>
@@ -106,11 +106,15 @@
       <!-- FINANCIAL DASH -->
       <figure class="project-right">
           <div class="project__hero">
-                 <div class="carousel"   data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+            <div class="main-carousel"  data-flickity='{ }'>
+
                         <img src="resources/img/bfin.png" class="project__img" alt="financial-dashboard-app">
+
+
                        <img src="resources/img/bfin1.png" class="project__img" alt="dashboard-app">
+
+
                        <img src="resources/img/bfin3.png" class="project__img" alt="dashboard-app">
-                       <!-- <img src="resources/img/dash7.gif" class="project__img" alt="financial-dashboard-app"> -->
                     </div>
           </div>
           <div class="project__content">
@@ -447,7 +451,10 @@
         <figure class="project-right">
             <div class="project__hero">
 
-              <div class="carousel"   data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+              <div
+                class="carousel"
+                data-flickity="{ &quot;imagesLoaded&quot;: true, &quot;percentPosition&quot;: false }"
+              >
                      <img src="resources/img/aribnb01.png" alt ="airbnb-mockup" class="project__img">
                     <img src="resources/img/airbnb01.png" class="project__img" alt="airbnb-mockup">
 
@@ -575,7 +582,5 @@
 <script src="resources/js/script.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
-
-
 
 </html>
