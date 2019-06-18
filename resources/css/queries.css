@@ -32,10 +32,6 @@
   h2 {
     width: 85%;
   }
-
-  .bylines__logos {
-    max-width: 93%;
-  }
 }
 
 /* --- Up to 767px -- */
@@ -46,8 +42,9 @@
 
   header,
   #projects,
+  #art,
   #contact {
-    padding-left: 60px;
+    padding-left: 50px;
   }
 
   header {
