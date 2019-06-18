@@ -74,7 +74,7 @@
     flex-direction: column-reverse;
   }
 
-  .art-logos {
+  .bylines__logos {
     max-width: 98%;
   }
 }
@@ -82,11 +82,9 @@
 /* --- Up to 480px -- */
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 70%;
     line-height: 1.075em;
   }
   h2 {
-    font-size: 70%;
     line-height: 1.2em;
   }
 
@@ -98,7 +96,7 @@
     margin-bottom: 15px;
   }
 
-  .project__img {
+  .bylines__logos {
     max-width: 45%;
     flex-direction: column;
     justify-content: center;
@@ -107,8 +105,13 @@
     overflow: visible;
   }
 
-  .project__img {
+  .bylines__logo {
     padding-right: 0px;
+  }
+
+  .link-gq,
+  .link-muse {
+    display: none;
   }
 
   #contact {
