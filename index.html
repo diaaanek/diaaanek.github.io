@@ -25,6 +25,10 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
@@ -102,7 +106,10 @@
       <!-- ECOMMERCE DASH -->
       <figure class="project-right">
           <div class="project__hero">
-               <a href=" " target="_blank"><img src="resources/img/ecomm.png" class="project__img alt="ecommerce-app"></a>
+              <div class="carousel"   data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+                     <img src="resources/img/ecomm.png" class="project__img" alt="ecommerce-app">
+                    <img src="resources/img/ecomm2.png" class="project__img" alt="ecommerce-app">
+                 </div>
           </div>
           <div class="project__content">
             <div class="project__title">
@@ -133,19 +140,19 @@
       <figure class="project-left">
           <div class="project__content">
               <div class="project__title">
-                  <p class="project__type">Web Design | Entrepreneurship</p>
+                  <p class="project__type">Web Design | Branding | Entrepreneurship</p>
                   <p class="project__heading"><a href="https://agaveco.co" target="_blank" class="project__link"><img src="resources/img/agave.png" alt="agave-logo" class="agave-logo"/>Agave Co.</a></p>
               </div>
           <p class="project__description">
-              <span class="challenge">The challenge:</span> Created a brand for my freelance work, in order to create a higher response rate from small businesses in need of work. <br/> <br/><em>How would I go about connecting new developers with work from small businesses?</em>
+              <span class="challenge">ABOUT:</span> Created a personalized brand for my freelance work, in order to create a higher response rate from small businesses in need of work. I also use this brand as a tool to help my developer peers connect with low-cost, high quality work for their portfolio.<br/> <br/><em>How would I go about connecting new developers with work from small businesses?</em>
               <br/><br/>
                 <a href="https://agaveco.co" target="_blank">Live Site</a> |
                 <a href="https://github.com/diaaanek/agave" target="_blank">Repo Code</a>
           </p>
             <br/>
           <div class="project__details">
-            <p class="project__detail"><span class="emoji">🔍</span>Small Business Research</p>
-            <p class="project__detail"><span class="emoji">💪</span>HTML + Custom CSS, Adobe Illustrator</p>
+            <p class="project__detail"><span class="emoji">🔍</span>Small Business Research, Product Management</p>
+            <p class="project__detail"><span class="emoji">💪</span>HTML + Custom CSS, Adobe Illustrator/Photoshop</p>
           </div>
         </div>
           <div class="project__hero">
@@ -157,16 +164,20 @@
       <!-- FINANCIAL DASH -->
       <figure class="project-right">
           <div class="project__hero">
-               <a href="http://butterfin.netlify.com" target="_blank"><img src="resources/img/bfin.png" class="project__img alt="financial-dashboard-app"></a>
+                 <div class="carousel"   data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+                        <img src="resources/img/bfin.png" class="project__img" alt="financial-dashboard-app">
+                       <img src="resources/img/dss.png" class="project__img" alt="dashboard-app">
+                       <!-- <img src="resources/img/dash7.gif" class="project__img" alt="financial-dashboard-app"> -->
+                    </div>
           </div>
           <div class="project__content">
             <div class="project__title">
                 <p class="project__type">UI Engineer | Frontend Architect </p>
-                <p class="project__heading"><a href=" " class="project__link">Financial Dashboard</a></p>
+                <p class="project__heading"><a href="http://butterfin.netlify.com" target="_blank" class="project__link">Financial Dashboard</a></p>
             </div>
 
               <p class="project__description">
-                  <span class="challenge">THE CHALLENGE:</span> Build a responsive page to display small business financial data
+                  <span class="challenge">THE CHALLENGE:</span> Build a responsive page to display small business financial data (given data)
                   <br/><br/>
                   <span class="challenge">Motivating Questions:</span> Why would a business owner be interested in coming to this page? How does the page lead to a concrete action for the business owner?
 
@@ -177,7 +188,7 @@
               </p>
 
           <div class="project__details">
-            <p class="project__detail"><span class="emoji">🔍</span>Product Research, Wireframing </p>
+            <p class="project__detail"><span class="emoji">🔍</span>Product Research, Wireframing, Zeplin </p>
             <p class="project__detail"><span class="emoji">💪</span>React Hooks, Bootstrap, Fushioncharts</p>
           </div>
         </div>
@@ -193,7 +204,7 @@
           <p class="project__description">
               <span class="challenge">The challenge:</span> Capstone full stack application project. Create a real world app with a React front-end and backend of your choice. <em>How would I go about creating a technical learning application for developers?</em>
               <br/><br/>
-                  <a href="candid.html" >Project Details</a> | <a href="https://candidapp.co" target="_blank">Live Demo</a> |
+                  <a href="candid.html" > See Project Details</a> | <a href="https://candidapp.co" target="_blank">Live Demo</a> |
                 <a href="https://github.com/diaaanek/candid" target="_blank">Github</a>
           </p>
             <br/>
@@ -218,7 +229,7 @@
                     <p class="project__heading"><a href="oyama" class="project__link">Astrodom</a></p>
                 </div>
             <p class="project__description">
-              <span class="challenge">The Challenge:</span> Creating a full stack application with a vanilla javascript front end and a seperate Rails API.
+              <span class="challenge">The Challenge:</span> Creating a full stack application with a vanilla javascript front end and a seperate Rails API. Built a custom game UI from scratch.
               <br/>
               <br/><em>How can we use a Rails API to interface with the Game Board Logic?</em>
               <br/> <br/>
@@ -227,7 +238,7 @@
             </p>
             <div class="project__details">
 
-              <p class="project__detail"><span class="emoji">💪</span>HTML, CSS, Vanilla Javascript, Rails API, Postgress DB</p>
+              <p class="project__detail"><span class="emoji">💪</span>HTML, Custom CSS, Vanilla Javascript, Rails API, Postgres DB</p>
             </div>
           </div>
         </figure>
@@ -264,15 +275,15 @@
                     <p class="project__heading"><a href="wsj.html" class="project__link">WSJ Connect</a></p>
                 </div>
             <p class="project__description">
-                <span class="challenge">The challenge:</span> How can we connect WSJ product suite into Millenial demographics/market?
+                <span class="challenge">The challenge:</span> As a CX Designer, how can we connect WSJ product suite into Millenial demographics/market?
                 <br/> <br/>
 
-        <a href="wsj.html">See Project </a>
+        <a href="wsj.html">See Project Details</a>
         <br/><br/>
-        <br/><em>1st Place Business Plan Competion Winner</em>
+        <br/><em>Notable Mention: 1st Place Business Plan Competion Winner</em>
             </p>
             <div class="project__details">
-              <p class="project__detail"><span class="emoji">🔍</span>Interviews, Mapping, Flow charts</p>
+              <p class="project__detail"><span class="emoji">🔍</span>Research, Interviews, Mapping, Flow charts</p>
               <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, Flinto, Invision</p>
             </div>
           </div>
@@ -286,7 +297,7 @@
                     <p class="project__heading"><a href="https://letzspoon.netlify.com/" class="project__link"  target="_blank">Let's Spoon</a></p>
                 </div>
             <p class="project__description">
-                <span class="challenge">About:</span> A Tinder-like swiping web app that matches users based on food preferences. Utilizing React, Yelp API, React-Spring-Hooks, Leaflet Maps API, Rails, Postgres
+                <span class="challenge">About:</span> A Tinder-like swiping web app that matches users based on food preferences. Utilizing React, Yelp API, React-Spring-Hooks, Leaflet Maps API, Rails, Postgres.
                 <br/>
 <br/><a href="https://letzspoon.netlify.com/"  target="_blank">Live Demo</a> |
 <a href="https://github.com/diaaanek/SPOON"  target="_blank">Code Repo</a>
@@ -340,7 +351,7 @@
 
             </p>
             <div class="project__details">
-              <p class="project__detail"><span class="emoji">🔍</span>Ideation, Wireframing, prototyping </p>
+              <p class="project__detail"><span class="emoji">🔍</span>Ideation, Wireframing, Prototyping </p>
               <p class="project__detail"><span class="emoji">💪</span>Sketch, Photoshop, React Native</p>
             </div>
           </div>
@@ -393,12 +404,17 @@
             </div>
           </div>
             <div class="project__hero">
-                <a href="mindful-couple"><img src="resources/img/letsgomobile.png" alt="letsgo-mobile-app" class="project__img"></a>
+
+              <div class="carousel"   data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+                      <a href=""><img src="resources/img/letsgomobile.png" alt="letsgo-mobile-app" class="project__img"></a>
+                 </div>
+
+
             </div>
         </figure>
 
 
-        <!-- PUPPY ME -->
+        <!-- OTHER-->
         <figure class="project-right">
             <div class="project__hero">
                  <a href=" "  target="_blank"><img src="resources/img/airbnb.png" alt ="airbnb-mockup" class="project__img"></a>
@@ -521,6 +537,7 @@
 
     <!-------------- SCRIPTS -------------->
 <script src="resources/js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 

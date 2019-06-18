@@ -383,3 +383,7 @@ html.transition *:after {
   transition: all 750ms !important;
   transition-delay: 0 !important;
 }
+
+.flickity-page-dots {
+  display: none;
+}
