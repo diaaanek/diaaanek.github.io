@@ -30,6 +30,11 @@ html {
   display: inline-block;
 }
 
+.santa-logo {
+  height: 65px;
+  width: 255px;
+}
+
 /**************************************
 REUSABLE COMPONENTS
 **************************************/
