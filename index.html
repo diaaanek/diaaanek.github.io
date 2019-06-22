@@ -47,6 +47,9 @@
     <link rel="manifest" href="resources/favicons/site.webmanifest">
 
     <title>Diane Korongy - Artist, Coder, Designer</title>
+
+
+
 </head>
 
 <body>
@@ -125,7 +128,8 @@
                   <span class="challenge">THE CHALLENGE:</span> Build completely custom Sketch component library for mobile chatbot UI
 
                   <br/> <br/>
-                  <a href="https://drive.google.com/open?id=1t9a-yg-KYBPLRKUUysWIbZ2B5sAPyGW-" target="_blank">Free Downloadable Custom UI Library Here </a> | Assets are my own
+                  <a href="https://drive.google.com/open?id=1t9a-yg-KYBPLRKUUysWIbZ2B5sAPyGW-" target="_blank">Free Downloadable Custom UI Library Here </a>
+                  <br/><br/> Assets are my own
                 </p>
 
               </p>
@@ -173,13 +177,6 @@ Character is able to jump on touch and gets points when gets cookie. Loses when 
 
 
                         <img src="resources/img/bfin.png" class="project__img" alt="financial-dashboard-app">
-
-
-                       <!-- <img src="resources/img/bfin1.png" class="project__img" alt="dashboard-app">
-
-
-                       <img src="resources/img/bfin3.png" class="project__img" alt="dashboard-app"> -->
-
           </div>
           <div class="project__content">
             <div class="project__title">
@@ -193,7 +190,7 @@ Character is able to jump on touch and gets points when gets cookie. Loses when 
                   <span class="challenge">Motivating Questions:</span> Why would a business owner be interested in coming to this page? How does the page lead to a concrete action for the business owner?
 
                   <br/> <br/>
-                  <a href="http://butterfin.netlify.com" target="_blank">Live Demo</a> |  <a href="https://github.com/diaaanek/fin-dashboard" target="_blank">Repo Code</a>
+                <a href="fin.html">See Design Process</a> |  <a href="http://butterfin.netlify.com" target="_blank">Live Demo</a>
 
                     <br/> <a href="https://trackrr.netlify.com/" target="_blank">Demo of Another Dashboard Custom UI</a>
                 </p>
@@ -644,6 +641,34 @@ Character is able to jump on touch and gets points when gets cookie. Loses when 
 
 
     <!-------------- SCRIPTS -------------->
+    <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('5ffn27ueaat8');
+</script>
+<!-- End of Async Drift Code -->
 <script src="resources/js/script.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
