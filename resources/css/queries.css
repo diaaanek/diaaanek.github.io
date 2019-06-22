@@ -93,13 +93,19 @@
     margin-bottom: 15px;
   }
 
-  .bylines__logos {
-    max-width: 45%;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0px;
-    margin: 0 auto;
-    overflow: visible;
+  #santa {
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 25%;
+  }
+
+  .santa-logo {
+    width: 160px;
+    height: 0px;
+  }
+
+  #santa2 {
+    display: none;
   }
 
   .bylines__logo {
