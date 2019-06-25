@@ -36,6 +36,11 @@
     <link href="resources/css/footer.css" rel="stylesheet">
     <link href="resources/css/queries.css" rel="stylesheet">
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
     <!-------------- FAVICONS -------------->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
@@ -128,14 +133,58 @@
         </p>
         <div class="process__details">
           <div>
-            <a href="https://github.com/diaaanek/candid" target="_blank"
+            <a href="https://github.com/diaaanek/fin-dashboard" target="_blank"
               >github</a
             >
           </div>
           <div>
-            <a href="https://candidapp.co" target="_blank">see it live 👉</a>
+            <a href="https://butterfin.netlify.com/" target="_blank">see it live 👉</a>
           </div>
         </div>
+      </div>
+    </figure>
+
+    <!-- DESIGN PRINCIPLE 2 -->
+    <figure class="process-left">
+      <div class="process__content">
+        <div class="process__title">
+          <p class="process__type">Research</p>
+          <p class="process__heading">Product Ideation</p>
+        </div>
+        <p class="process__description">
+        I prepared myself and started with Google search. My purpose was to learn more about the users and their problems, and what purpose a dashboard would serve.
+        <br/><br/>I read a couple blogs and collected user feedback through conversations from small business owners.
+
+      <br/><br/> Real world products looked at were <a href="https://www.zoho.com/us/books/?utm_source=fitsmallbusiness&utm_medium=cpc&utm_campaign=Books">Zoho Books</a> and <a href="https://www.waveapps.com/">Wave Financial Software </a>
+        </p>
+      </div>
+      <div class="process__hero">
+          <img src="resources/img/fin-dash/bfininspo.png"  class="process__img" alt="fin-wireframe" />
+
+        </div>
+    </figure>
+
+    <figure class="process-right">
+      <div class="process__hero">
+
+        <div
+          class="carousel"
+          data-flickity="{ &quot;imagesLoaded&quot;: true, &quot;percentPosition&quot;: false }"
+        >
+
+        <img src="resources/img/fin-dash/inspo1.png"  class="process__img" alt="fin" />
+        <img src="resources/img/fin-dash/inspo2.png"  class="process__img" alt="fin" />
+        <img src="resources/img/fin-dash/inspo3.png"  class="process__img" alt="fin" />
+  </div>
+      </div>
+      <div class="process__content">
+        <div class="process__title">
+          <p class="process__type">Research</p>
+          <p class="process__heading">Product Inspiration</p>
+        </div>
+        <p class="process__description">
+          Once I had an idea of my design, I searched how usuable my design was based on similar dashboard designs off Dribbble.
+        </p>
       </div>
     </figure>
 
@@ -148,11 +197,11 @@
         </div>
         <p class="process__description">
 
-            <li>1. Research </li>
-            <li>2. Sketches </li>
-            <li>3. Wireframes </li>
-            <li>4. Finding UX/Interaction Issues</li>
-            <li>5. Design/Rapid Development </li>
+            <br><strike> 1. Research </br></strike>
+            <br><strike> 2. Sketches </br></strike>
+            <br>3. Wireframes </br>
+            <br>4. Finding UX/Interaction Issues</br>
+            <br>5. Design/Rapid Development </br>
 
         </p>
       </div>
@@ -164,8 +213,14 @@
       </div>
     </figure>
 
+
+
+
+
+
+
     <!-- DESIGN PRINCIPLE 1 -->
-    <figure class="process-right">
+    <figure class="process-left">
       <div class="process__hero">
         <img
           src="resources/img/brand.png"
@@ -197,15 +252,27 @@
         </p>
       </div>
       <div class="process__hero">
-
           <img src="resources/img/fin-wire.png"  class="process__img" alt="fin-wireframe" />
 
-
         </div>
-
     </figure>
 
 
+    <figure class="process-right">
+      <div class="process__hero">
+        <img src="resources/img/fin-dash/bfin-component.png"  class="process__img" alt="fin" />
+
+      </div>
+      <div class="process__content">
+        <div class="process__title">
+          <p class="process__type">Implementation</p>
+          <p class="process__heading">Component Hierarchy</p>
+        </div>
+        <p class="process__description">
+          Once I had an idea of my design, I scaffolded my project with create-react-app and set up my file structure, along with my component hierarchy.
+        </p>
+      </div>
+    </figure>
 
 
 <figure class="process-right">
@@ -277,5 +344,6 @@
 
     <!-------------- SCRIPTS -------------->
 <script src="resources/js/script.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
